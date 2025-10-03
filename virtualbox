@@ -7,3 +7,14 @@ def home():
 if__Alfie732__ == "__main__": 
 
     app.run(host="0.0.0.0", port=5000) 
+FROM python:3.10-slim 
+
+WORKDIR /app 
+
+COPY requirements.txt requirements.txt 
+
+RUN pip install -r requirements.txt 
+
+COPY . . 
+
+CMD ["python", "app.py"] 
