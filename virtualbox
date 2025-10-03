@@ -1,0 +1,9 @@
+app = Flask(__Alfie732__)
+@app.route("/") 
+
+def home(): 
+
+    return "Hello from Docker + GitHub!"
+if__Alfie732__ == "__main__": 
+
+    app.run(host="0.0.0.0", port=5000) 
